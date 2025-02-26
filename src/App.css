@@ -1,0 +1,169 @@
+/* body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: grey;
+} */
+
+#root {
+    overflow: hidden;
+  }
+  
+  .container {
+    max-width: 1170px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+  }
+  .header nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  .topBar {
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .topBar:before {
+    content: '';
+    background: #0c0c0c;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -999px;
+    right: -999px;
+  }
+  
+  .topBar > * {
+    position: relative;
+  }
+  .topBar .contactInfo ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .topBar .contactInfo li {
+    margin: 0 30px 0 0;
+  }
+  
+  .topBar .contactInfo li span {
+    margin: 0 5px 0 0;
+  }
+  
+  .topBar .contactInfo a {
+    color: #fff;
+  }
+  
+  .topBar .otherInfo {
+    display: flex;
+    align-items: center;
+  }
+  .ant-layout-footer {
+    background: #212121;
+    color: #e9e9e9;
+  }
+  
+  .footerWidget {
+    padding: 30px 0;
+  }
+  
+  .footerWidget h3,
+  .footerWidget .ant-list-item-meta-title a {
+    color: #d7d7d7;
+  }
+  
+  .footerWidget h3 {
+    font-size: 18px;
+    margin: 0 0 25px;
+  }
+  
+  .footerWidget .ant-list-item-meta-description {
+    color: #f14705;
+  }
+  
+  .footerWidget .ant-list-split .ant-list-item {
+    border: 0;
+    padding: 10px 0;
+    color: #e9e9e9;
+    position: relative;
+  }
+  
+  .footerWidget .recentPost .ant-list-item {
+    padding-left: 20px;
+  }
+  
+  .footerWidget .recentPost .ant-list-item:before {
+    content: '\f054';
+    font: var(--fa-font-solid);
+    position: absolute;
+    top: 15px;
+    left: 0;
+  }
+  
+  .footerWidget .ant-list-item-meta-title {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue';
+    font-weight: 300;
+  }
+  
+  .footerWidget .ant-avatar {
+    border-radius: 0 !important;
+    width: 70px;
+    height: 70px;
+  }
+  
+  .footerWidget .tags .ant-tag {
+    font-size: 15px;
+    margin: 0 10px 10px 0;
+    padding: 5px 15px;
+  }
+  
+  .footerWidget .tags .ant-tag a {
+    transition: opacity 0.3s linear;
+  }
+  
+  .footerWidget .tags .ant-tag a:hover {
+    opacity: 0.5;
+  }
+  
+  .footerWidget .tags .ant-tag-close-icon {
+    font-size: 15px;
+  }
+  
+  /* footer copyright */
+  .footerCopyright {
+    position: relative;
+    padding: 25px 0 0;
+  }
+  
+  .footerCopyright:before {
+    content: '';
+    background: #000;
+    position: absolute;
+    top: 0;
+    bottom: -25px;
+    left: -999px;
+    right: -999px;
+  }
+  
+  .footerCopyright .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
